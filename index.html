@@ -78,7 +78,20 @@
 
   <section>
     <h2>About Celebrations</h2>
-    <p>Celebrations is a personal family event tracker for iPhone and iPad. Keep track of birthdays, anniversaries, and other important dates for the people who matter most — all privately stored on your device.</p>
+    <p>Celebrations is a personal family event tracker for iPhone and iPad. Keep track of birthdays, anniversaries, and other important dates for everyone who matters — all stored privately on your device with no account required.</p>
+    <p>Key features include:</p>
+    <ul>
+      <li><strong>People &amp; Events</strong> — Add unlimited people with birthdays, extra events (wedding anniversaries, work milestones, graduations, and more), profile photos, phone numbers, and personal notes.</li>
+      <li><strong>In Memoriam</strong> — Honour loved ones who have passed. Memorial anniversaries are shown in purple throughout the app so they are never overlooked.</li>
+      <li><strong>Calendar</strong> — A full monthly view with colour-coded dots. Red = today, orange = within 7 days, blue = within 30 days, purple = memoriam anniversary.</li>
+      <li><strong>Family Tree</strong> — Build an interactive visual family tree with 22 relationship types (including step and in-law relationships). Export it as a PDF to share or print.</li>
+      <li><strong>Statistics</strong> — Discover insights about your circle: age distribution, shared birthdays, upcoming events, oldest and youngest, and more.</li>
+      <li><strong>Notifications</strong> — Fully customisable local reminders up to 14 days ahead. Milestone birthdays receive a Time Sensitive alert.</li>
+      <li><strong>Send Messages</strong> — When an event is within 14 days, tap the message button on any person's row to send a personalised birthday or anniversary message via iMessage, WhatsApp, or SMS.</li>
+      <li><strong>Backup &amp; Restore</strong> — Export and import as JSON (full backup with photos), GEDCOM (compatible with genealogy apps), or CSV (opens in any spreadsheet).</li>
+      <li><strong>Personalise</strong> — Choose from 8 accent colours and Light, Dark, or System appearance.</li>
+      <li><strong>Privacy First</strong> — No accounts, no internet connection, no third-party tracking. Your data never leaves your device.</li>
+    </ul>
   </section>
 
   <section>
@@ -86,42 +99,72 @@
 
     <div class="faq-item">
       <strong>Where is my data stored?</strong>
-      All data is stored privately on your device. Nothing is sent to external servers.
-    </div>
-
-    <div class="faq-item">
-      <strong>How do I back up my data?</strong>
-      Go to <em>Settings → Export Backup</em> to save a JSON file containing all your people and events. You can import this file at any time via <em>Settings → Import Backup</em>.
-    </div>
-
-    <div class="faq-item">
-      <strong>How do notifications work?</strong>
-      Celebrations uses local notifications to remind you of upcoming events. You can enable or disable these in <em>Settings → Notifications</em>. All notifications are generated on your device — no internet connection required.
+      All data is stored privately on your device using Apple's SwiftData framework. Nothing is sent to external servers.
     </div>
 
     <div class="faq-item">
       <strong>How do I add a person?</strong>
-      Tap the <strong>+</strong> button on the People tab. You can add a name, photo, date of birth, and any number of events such as anniversaries or other special dates.
+      Tap the <strong>+</strong> button (top-right) on the People tab. Enter their name, date of birth, and optionally a photo, phone number, and notes. Choose a category: Birthday, Anniversary, or In Memoriam.
     </div>
 
     <div class="faq-item">
       <strong>How do I add events to a person?</strong>
-      Open a person's profile and tap <em>Add Event</em>. Choose from over ten event types including birthdays, anniversaries, graduations, and more.
+      Open a person's profile and tap <em>Add Event</em>. You can choose from 10 event types: Birthday, Anniversary, Wedding Anniversary, Work Anniversary, Baptism / Christening, Graduation, Memorial Day, Special Day, Reminder, and Other.
     </div>
 
     <div class="faq-item">
-      <strong>How do I export a family tree?</strong>
-      Navigate to the <em>Family Tree</em> tab and tap the export button to generate a PDF of your family tree.
+      <strong>How do I track a loved one who has passed away?</strong>
+      When adding or editing a person, set their category to <strong>In Memoriam</strong>. You can also record their date of passing. Their anniversary will appear in purple throughout the app — in the People list, Calendar, and notifications — so it is always remembered with care.
+    </div>
+
+    <div class="faq-item">
+      <strong>How do I build a family tree?</strong>
+      Go to the <strong>Family Tree</strong> tab and select a root person. Tap any relationship type to connect another person — choose from 22 relationship types including Parent, Child, Spouse / Partner, Sibling, Grandparent, Aunt/Uncle, Step-Parent, Parent-in-Law, and more. Tap <em>View Diagram</em> to open the interactive visual tree. Pinch to zoom, drag to pan, and tap any person's bubble to open their Family Profile. Use the share button to export the tree as a PDF.
+    </div>
+
+    <div class="faq-item">
+      <strong>How do I send a birthday or anniversary message?</strong>
+      When someone's event is within 14 days, a green message button appears on their row in the People list and Calendar. Tap it to compose a personalised message. Celebrations will open your preferred messaging app (iMessage, WhatsApp, or SMS) with the message pre-filled.
+    </div>
+
+    <div class="faq-item">
+      <strong>How do notifications work?</strong>
+      Go to <em>Settings → Notifications</em> to enable reminders. You can choose to be notified on the day, and/or 1, 3, 7, or 14 days in advance. Set a preferred delivery time and filter by event type (birthdays, anniversaries, special days). All notifications are generated on your device — no internet connection required. Milestone birthdays (e.g. 18, 21, 30, 50, 75, 100) receive a Time Sensitive alert.
+    </div>
+
+    <div class="faq-item">
+      <strong>What does the Statistics tab show?</strong>
+      The Statistics tab provides an overview of your circle — total people, living vs. in memoriam, upcoming events this month, people with shared birthdays, and the oldest and youngest in your list.
+    </div>
+
+    <div class="faq-item">
+      <strong>How do I back up my data?</strong>
+      Go to <em>Settings → Data</em> and tap <strong>Export Backup (JSON)</strong>. This creates a complete backup including photos. Save the file to Files, iCloud Drive, or any location you choose. To restore, tap <strong>Import Backup (JSON)</strong> and select the file.
+    </div>
+
+    <div class="faq-item">
+      <strong>Can I export to a genealogy app or spreadsheet?</strong>
+      Yes. In <em>Settings → Data</em> tap <strong>Export GEDCOM (.ged)</strong> to export a file compatible with genealogy apps such as Ancestry, MacFamilyTree, or Gramps. Tap <strong>Export CSV (.csv)</strong> to export a spreadsheet-compatible file that opens in Numbers, Excel, or Google Sheets. You can import GEDCOM and CSV files back into Celebrations the same way.
+    </div>
+
+    <div class="faq-item">
+      <strong>How do I customise the app's appearance?</strong>
+      Go to <em>Settings → Appearance</em>. Choose from <strong>8 accent colours</strong> and switch between Light, Dark, or System mode to match your preferences.
+    </div>
+
+    <div class="faq-item">
+      <strong>Can I try the app before adding my real data?</strong>
+      Yes. Go to <em>Settings → Demo Data → Load Example People</em> to add 14 fictional example people. This lets you explore all features — calendar, family tree, statistics, and notifications — before entering your own information. You can clear the demo data at any time.
     </div>
 
     <div class="faq-item">
       <strong>Can I delete all my data?</strong>
-      Yes. Go to <em>Settings → Delete All Data</em>. This action is permanent and cannot be undone.
+      Yes. Go to <em>Settings → Delete All Data</em>. This action is permanent and cannot be undone. We recommend exporting a JSON backup first.
     </div>
 
     <div class="faq-item">
       <strong>What iOS version is required?</strong>
-      Celebrations requires iOS 17 or later and is optimized for iPhone and iPad.
+      Celebrations requires iOS 17 or later and is optimised for iPhone and iPad.
     </div>
   </section>
 
@@ -136,7 +179,7 @@
 </main>
 
 <footer>
-  <p>&copy; 2025 Celebrations &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+  <p>&copy; 2026 Celebrations &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
 </footer>
 
 </body>
